@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.res.Configuration;
 import android.gesture.OrientedBoundingBox;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
@@ -43,10 +44,13 @@ public class Home extends AppCompatActivity {
         boolean VerHunter = VersionFinder();
         if (VerHunter == false){
             lblOutput.setText("You will not be able to run, your system is too far out of date... try updating");
+            Color.green(23);
         }
         else{
             lblOutput.setText("You will be able to use this application, probably becuase youre not as much of a failure as we assumed you would be");
+            Color.blue(34);
         }
+
     }
     //Check Version of OS
     private boolean VersionFinder(){
