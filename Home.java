@@ -69,3 +69,4 @@ public class Home extends AppCompatActivity {
         super.onConfigurationChanged(newConfig);
     }
 }
+//Overall Trying to push to git
